@@ -1,1 +1,10 @@
 .env
+notebooks/.ipynb_checkpoints/
+notebooks/.virtual_documents/
+notebooks/anaconda_projects/
+.idea/
+.ipynb_checkpoints
+anaconda_projects
+.virtual_documents
+data/generated-dataset/households.xlsx
+data/generated-dataset/energy_consumption.xlsx
