@@ -151,3 +151,11 @@ def get_city_hourly_consumption(conn):
     """
     return pd.read_sql(query, conn)
 
+def get_household_consumption_with_meta(conn):
+    query = """
+        SELECT e.household_id, e.timestamp, e.consumption_kwh,
+               h.house_type, h.income_level, h.activity_pattern
+        FROM energy_consumption e
+        JOIN households h ON e.household_id = h.household_id;
+    """
+    return pd.read_sql(query, conn)
