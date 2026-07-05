@@ -8,3 +8,5 @@ anaconda_projects
 .virtual_documents
 data/generated-dataset/households.xlsx
 data/generated-dataset/energy_consumption.xlsx
+notebooks/__pycache__/
+notebooks/.virtual_documents/Phase1_Data_Generation_DB.ipynb
