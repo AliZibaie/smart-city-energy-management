@@ -3,3 +3,5 @@ pandas
 pymysql
 python-dotenv
 matplotlib
+scikit-learn
+shap
