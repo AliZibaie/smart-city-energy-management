@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 
 sys.path.append("..")
-import notebooks.db_helpers as dbh
+import db_helpers as dbh
 
 load_dotenv("../.env")
 
