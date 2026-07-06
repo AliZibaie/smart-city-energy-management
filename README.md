@@ -9,26 +9,27 @@ This project covers the full lifecycle of a data‑driven system – from synthe
 
 1. [Introduction](#introduction)
 2. [Key Features](#key-features)
-3. [Project Structure](#project-structure)
-4. [Prerequisites](#prerequisites)
-5. [Setup Instructions](#setup-instructions)
+3. [Dashboard Preview](#dashboard-preview)
+4. [Project Structure](#project-structure)
+5. [Prerequisites](#prerequisites)
+6. [Setup Instructions](#setup-instructions)
    - [Environment Variables](#environment-variables)
    - [Database Setup](#database-setup)
    - [Virtual Environment & Dependencies](#virtual-environment--dependencies)
    - [Using the CLI](#using-the-cli)
-6. [Phase‑by‑Phase Walkthrough](#phasebyphase-walkthrough)
+7. [Phase‑by‑Phase Walkthrough](#phasebyphase-walkthrough)
    - [Phase 1 – Data Generation & Database](#phase-1--data-generation--database)
    - [Phase 2 – Forecasting, Anomaly Detection & XAI](#phase-2--forecasting-anomaly-detection--xai)
    - [Phase 3 – Interactive Dashboard](#phase-3--interactive-dashboard)
    - [Phase 4 – Adversarial Attack Simulation](#phase-4--adversarial-attack-simulation)
-7. [Results and Interpretations](#results-and-interpretations)
+8. [Results and Interpretations](#results-and-interpretations)
    - [Phase 1 – Exploratory Data Analysis](#phase-1--exploratory-data-analysis)
    - [Phase 2 – Model Performance & Explainability](#phase-2--model-performance--explainability)
    - [Phase 4 – Attack Impact & Robustness](#phase-4--attack-impact--robustness)
-8. [Strengths and Weaknesses](#strengths-and-weaknesses)
-9. [Ethical Considerations & Privacy](#ethical-considerations--privacy)
-10. [Conclusion](#conclusion)
-11. [Future Work](#future-work)
+9. [Strengths and Weaknesses](#strengths-and-weaknesses)
+10. [Ethical Considerations & Privacy](#ethical-considerations--privacy)
+11. [Conclusion](#conclusion)
+12. [Future Work](#future-work)
 
 ---
 
@@ -63,6 +64,18 @@ It demonstrates the complete cycle of a data science project:
 - **CLI utility** – `smartcity.py` simplifies environment setup, database creation, notebook execution, and dashboard launch.
 
 ---
+## Dashboard Preview
+
+Watch the interactive Streamlit dashboard in action, showing real-time forecasts, anomaly alerts, and model explanations.
+
+<div align="center">
+  <video controls width="850" autoplay muted loop>
+    <source src="assets/dashboard-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+You can also run the dashboard locally using `python smartcity.py streamlit` **after** completing Phase 1 (data generation and database insertion). The dashboard reads directly from the database, so it requires the generated data to be present.
 
 ## Project Structure
 
