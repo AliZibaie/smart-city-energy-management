@@ -68,6 +68,9 @@ It demonstrates the complete cycle of a data science project:
 
 Watch the interactive Streamlit dashboard in action, showing real-time forecasts, anomaly alerts, and model explanations.
 
+![Dashboard Preview (GIF)](assets/dashboard-demo.gif)
+
+For the full video, see here:  
 https://github.com/AliZibaie/smart-city-energy-management/blob/main/assets/dashboard-demo.mp4
 
 You can also run the dashboard locally using `python smartcity.py streamlit` **after** completing Phase 1 (data generation and database insertion). The dashboard reads directly from the database, so it requires the generated data to be present.
