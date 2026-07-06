@@ -9,9 +9,11 @@ import shap
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 
-import notebooks.db_helpers as dbh
-
 from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+import notebooks.db_helpers as dbh
 
 env_path = Path(__file__).parent.parent / ".env"
 load_dotenv(dotenv_path=env_path)
