@@ -68,12 +68,7 @@ It demonstrates the complete cycle of a data science project:
 
 Watch the interactive Streamlit dashboard in action, showing real-time forecasts, anomaly alerts, and model explanations.
 
-<div align="center">
-  <video controls width="850" autoplay muted loop>
-    <source src="assets/dashboard-demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+<video src="https://github.com/user-attachments/assets/dashboard-demo.mp4" controls width="850" autoplay></video>
 
 You can also run the dashboard locally using `python smartcity.py streamlit` **after** completing Phase 1 (data generation and database insertion). The dashboard reads directly from the database, so it requires the generated data to be present.
 
