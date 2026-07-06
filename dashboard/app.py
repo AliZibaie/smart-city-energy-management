@@ -9,10 +9,12 @@ import shap
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 
-sys.path.append("..")
 import notebooks.db_helpers as dbh
 
-load_dotenv("../.env")
+from pathlib import Path
+
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 DB_NAME = os.getenv('DB_NAME')
 DB_USER = os.getenv('DB_USER')
@@ -34,8 +36,10 @@ def get_connection():
 
 @st.cache_resource
 def load_models():
-    forecast_model = joblib.load("../models/forecast_model.joblib")
-    anomaly_model = joblib.load("../models/anomaly_detector.joblib")
+    model_path = Path(__file__).parent.parent / "models"
+
+    forecast_model = joblib.load(f"{model_path}/forecast_model.joblib")
+    anomaly_model = joblib.load(f"{model_path}/anomaly_detector.joblib")
     return forecast_model, anomaly_model
 
 @st.cache_data(ttl=600)

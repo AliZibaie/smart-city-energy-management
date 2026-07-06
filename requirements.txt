@@ -7,3 +7,4 @@ scikit-learn
 shap
 streamlit
 joblib
+jupyter
